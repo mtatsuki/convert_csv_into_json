@@ -19,9 +19,9 @@ if(file_exists($argv[1])){
     $records = $csv->getRecords();
     $list = array();
     foreach ($records as $key=>$record) {
-        $record['category'] = array(
-            $record['category']
-        );
+        // $record['category'] = array(
+        //     $record['category']
+        // );
         $list["list"][] = $record;
     }
     $list = array($list);
